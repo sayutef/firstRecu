@@ -1,22 +1,25 @@
 <div *ngIf="pokemon">
-    <h1>{{ pokemon.name }}</h1>
-    <img [src]="pokemon.sprites.front_default" alt="{{ pokemon.name }}">
     
-    <img [src]="pokemon.sprites.back_default" alt="{{ pokemon.name }}">
+    <h1>{{ pokemon.name | uppercasePokemon }}</h1>
+
     
-    <img [src]="pokemon.sprites.front_shiny" alt="{{ pokemon.name }}">
-    
-    <img [src]="pokemon.sprites.back_shiny" alt="{{ pokemon.name }}">
+    <img [src]="pokemon.sprites.front_default" alt="{{ pokemon.name | uppercasePokemon }}">
+    <img [src]="pokemon.sprites.back_default" alt="{{ pokemon.name | uppercasePokemon }}">
+    <img [src]="pokemon.sprites.front_shiny" alt="{{ pokemon.name | uppercasePokemon }}">
+    <img [src]="pokemon.sprites.back_shiny" alt="{{ pokemon.name | uppercasePokemon }}">
+
     <h2>Habilidades</h2>
     <ul>
-      <li *ngFor="let ability of pokemon.abilities">{{ ability.ability.name }}</li>
+      
+      <li *ngFor="let ability of pokemon.abilities">{{ ability.ability.name | replaceLetters }}</li>
     </ul>
+
     <h2>Juegos</h2>
     <ul>
-      <li *ngFor="let game of pokemon.game_indices">{{ game.version.name }}</li>
+      
+      <li *ngFor="let game of pokemon.game_indices">{{ game.version.name | capitalize }}</li>
     </ul>
-  </div>
-  <div *ngIf="!pokemon">
+</div>
+<div *ngIf="!pokemon">
     <p>Cargando...</p>
-  </div>
-  
+</div>

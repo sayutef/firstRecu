@@ -5,9 +5,13 @@ import { PokemonService } from '../../services/pokemon.service';
 import { RouterModule } from '@angular/router';
 import { FavoritesService } from '../../services/favorites.service';
 
+import { UppercasePokemonPipe } from '../../pipes/uppercase-pokemon.pipe';
+import { ReplaceLettersPipe } from '../../pipes/replace-letters.pipe';
+import { CapitalizePipe } from '../../pipes/capitalize.pipe';
+
 @Component({
   standalone: true,
-  imports: [CommonModule, RouterModule],
+  imports: [CommonModule, RouterModule, UppercasePokemonPipe, ReplaceLettersPipe, CapitalizePipe],
   selector: 'app-pokemon-list',
   templateUrl: './pokemon-list.component.html',
   styleUrls: ['./pokemon-list.component.scss'],
