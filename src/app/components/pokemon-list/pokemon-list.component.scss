@@ -1,0 +1,72 @@
+h1 {
+    text-align: center;
+    font-family: 'Pokemon Solid', sans-serif; /* Fuente única para un toque Pokémon */
+    color: #ffcc00; /* Color amarillo Pokémon */
+    text-shadow: 2px 2px 5px #333;
+  }
+  
+  ul {
+    list-style: none; /* Quita los puntos de la lista */
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px auto;
+    padding: 15px;
+    border: 2px solid #0075be; /* Color azul Pokémon */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(90deg, #d9f0fc, #b3e5fc);
+    transition: transform 0.2s ease, background 0.3s ease;
+  }
+  
+  li:hover {
+    transform: scale(1.05); /* Efecto de agrandamiento al pasar el ratón */
+    background: linear-gradient(90deg, #b3e5fc, #d9f0fc);
+  }
+  
+  a {
+    font-family: 'Pokemon Solid', sans-serif;
+    font-size: 1.2em;
+    color: #0075be;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #ffcc00; /* Cambia de azul a amarillo al pasar el ratón */
+  }
+  
+  button {
+    background-color: #ffcc00;
+    color: #333;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #ffdd44; /* Un tono más claro de amarillo */
+    transform: translateY(-3px); /* Efecto de levantamiento */
+  }
+  
+  a:last-child {
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 1.1em;
+    color: #333;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #0075be;
+  }
+  
+  a:last-child:hover {
+    color: #ffcc00;
+  }
+  

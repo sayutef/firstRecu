@@ -1,0 +1,49 @@
+h1 {
+    text-align: center;
+    font-family: 'Pokemon Solid', sans-serif; /* Fuente Pokémon */
+    color: #ff1e56; /* Color rojo relacionado con la Pokebola */
+    text-shadow: 2px 2px 5px #333;
+  }
+  
+  ul {
+    list-style: none; /* Elimina los puntos de la lista */
+    padding: 0;
+    margin: 20px auto;
+    max-width: 400px;
+  }
+  
+  li {
+    text-align: center;
+    margin: 10px auto;
+    padding: 15px;
+    font-size: 1.2em;
+    font-family: 'Pokemon Solid', sans-serif;
+    background: linear-gradient(90deg, #ffcc00, #ff1e56); /* Gradiente amarillo a rojo */
+    color: #fff;
+    border-radius: 10px;
+    border: 2px solid #333; /* Borde negro como la Pokebola */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+  }
+  
+  li:hover {
+    transform: scale(1.1); /* Efecto de agrandamiento */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+  }
+  
+  a {
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #0075be; /* Azul como el estilo Pokémon */
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.2s ease;
+  }
+  
+  a:hover {
+    color: #ffcc00; /* Cambia a amarillo al pasar el ratón */
+    transform: translateY(-3px); /* Efecto de levantamiento */
+  }
+  

@@ -1,0 +1,12 @@
+<h1>Lista de Pokémon</h1>
+<ul>
+  <li *ngFor="let pokemon of pokemons">
+    <a [routerLink]="['/details', pokemon.name]">{{ pokemon.name }}</a>
+
+    
+    <button (click)="toggleFavorite(pokemon)">
+      {{ pokemon.favorite ? 'Quitar de favoritos' : 'Agregar a favoritos' }}
+    </button>
+  </li>
+  <a [routerLink]="['/pokeball']">ver favoritos</a>
+</ul>
