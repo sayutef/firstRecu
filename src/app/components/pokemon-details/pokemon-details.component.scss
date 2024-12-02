@@ -1,17 +1,17 @@
-/* Estilo para el contenedor principal */
+
 div {
     text-align: center;
-    font-family: 'Pokemon Solid', sans-serif; /* Fuente temática Pokémon */
+    font-family: 'Pokemon Solid', sans-serif; 
     padding: 20px;
-    background: linear-gradient(120deg, #ffcc00, #ff1e56); /* Fondo dinámico con gradiente */
+    background: linear-gradient(120deg, #ffcc00, #ff1e56); 
     border-radius: 15px;
     color: #fff;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     margin: 20px auto;
-    max-width: 500px;
+    max-width: 900px;
   }
   
-  /* Título del Pokémon */
+
   h1 {
     font-size: 2.5em;
     text-transform: capitalize;
@@ -20,31 +20,30 @@ div {
     margin-bottom: 20px;
   }
   
-  /* Imagen del Pokémon */
+
   img {
     width: 150px;
     height: 150px;
     margin: 10px auto;
-    display: block;
-    border: 3px solid #333; /* Borde oscuro para resaltar */
-    border-radius: 50%; /* Forma circular */
+    border: 3px solid #333; 
+    border-radius: 50%; 
     background: #fff;
   }
   
-  /* Subtítulos de secciones */
+  
   h2 {
     font-size: 1.8em;
     margin-top: 20px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
     color: #f7f7f7;
     border-bottom: 2px solid #fff;
-    display: inline-block;
+    display: flex;
     padding-bottom: 5px;
   }
   
-  /* Listas */
+  
   ul {
-    list-style: none; /* Elimina los puntos */
+    list-style: none; 
     padding: 0;
     margin: 10px 0;
   }
@@ -53,21 +52,21 @@ div {
     font-size: 1.2em;
     margin: 5px 0;
     padding: 10px;
-    background: rgba(255, 255, 255, 0.1); /* Fondo translúcido */
+    background: rgba(255, 255, 255, 0.1); 
     border-radius: 10px;
-    text-transform: capitalize; /* Capitaliza los nombres */
+    text-transform: capitalize; 
     transition: transform 0.2s ease, background 0.3s ease;
   }
   
   li:hover {
-    transform: scale(1.05); /* Efecto de agrandamiento al pasar el ratón */
-    background: rgba(255, 255, 255, 0.2); /* Cambio de color al pasar el ratón */
+    transform: scale(1.05); 
+    background: rgba(255, 255, 255, 0.2); 
   }
   
-  /* Estilo de mensaje de carga */
+ 
   p {
     font-size: 1.5em;
-    color: #0075be; /* Azul temático */
+    color: #0075be;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
     margin: 20px;
   }
